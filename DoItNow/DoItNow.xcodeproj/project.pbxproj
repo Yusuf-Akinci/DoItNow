@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		271DF4B82FE8859B007F3B83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DF4B52FE8859B007F3B83 /* ContentView.swift */; };
+		271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */; };
+		271DF4BA2FE8859B007F3B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271DF4B42FE8859B007F3B83 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		271DF49B2FE8835E007F3B83 /* DoItNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoItNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		271DF4B42FE8859B007F3B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		271DF4B52FE8859B007F3B83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoItNowApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		271DF49D2FE8835E007F3B83 /* DoItNow */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DoItNow;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		271DF4982FE8835E007F3B83 /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		271DF4922FE8835E007F3B83 = {
 			isa = PBXGroup;
 			children = (
-				271DF49D2FE8835E007F3B83 /* DoItNow */,
+				271DF4B72FE8859B007F3B83 /* DoItNow */,
 				271DF49C2FE8835E007F3B83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,48 @@
 				271DF49B2FE8835E007F3B83 /* DoItNow.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		271DF4B72FE8859B007F3B83 /* DoItNow */ = {
+			isa = PBXGroup;
+			children = (
+				271DF4BE2FE8860B007F3B83 /* ViewModels */,
+				271DF4BD2FE88603007F3B83 /* Models */,
+				271DF4BB2FE885A4007F3B83 /* Views */,
+				271DF4BC2FE885B2007F3B83 /* IDE */,
+			);
+			path = DoItNow;
+			sourceTree = "<group>";
+		};
+		271DF4BB2FE885A4007F3B83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				271DF4B52FE8859B007F3B83 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		271DF4BC2FE885B2007F3B83 /* IDE */ = {
+			isa = PBXGroup;
+			children = (
+				271DF4B42FE8859B007F3B83 /* Assets.xcassets */,
+				271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */,
+			);
+			path = IDE;
+			sourceTree = "<group>";
+		};
+		271DF4BD2FE88603007F3B83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		271DF4BE2FE8860B007F3B83 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +102,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				271DF49D2FE8835E007F3B83 /* DoItNow */,
 			);
 			name = DoItNow;
 			packageProductDependencies = (
@@ -109,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271DF4BA2FE8859B007F3B83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271DF4B82FE8859B007F3B83 /* ContentView.swift in Sources */,
+				271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
