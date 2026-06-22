@@ -12,8 +12,9 @@ struct HomeView: View {
     var body: some View {
         NavigationStack{
             TabView{
-                Text("Page1").tabItem{(Image(systemName: "house"))}
-                Text("Page2").tabItem{(Image(systemName: "video"))}
+                ListView(title: "To Do").tabItem({Image(systemName: "eye")})
+                ListView(title: "In Progress").tabItem({Image(systemName: "nose")})
+                ListView(title: "Done").tabItem({Image(systemName: "ear")})
             }
             .tabViewStyle(.tabBarOnly)
             .toolbar{
