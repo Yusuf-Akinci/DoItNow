@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		271DF4B82FE8859B007F3B83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DF4B52FE8859B007F3B83 /* ContentView.swift */; };
 		271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */; };
 		271DF4BA2FE8859B007F3B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271DF4B42FE8859B007F3B83 /* Assets.xcassets */; };
+		27D10B6B2FE9690700870705 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D10B6A2FE9690700870705 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		271DF49B2FE8835E007F3B83 /* DoItNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoItNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271DF4B42FE8859B007F3B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		271DF4B52FE8859B007F3B83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoItNowApp.swift; sourceTree = "<group>"; };
+		27D10B6A2FE9690700870705 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		271DF4BB2FE885A4007F3B83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				271DF4B52FE8859B007F3B83 /* ContentView.swift */,
+				27D10B6A2FE9690700870705 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271DF4B82FE8859B007F3B83 /* ContentView.swift in Sources */,
+				27D10B6B2FE9690700870705 /* HomeView.swift in Sources */,
 				271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
