@@ -9,18 +9,20 @@ import SwiftUI
 
 struct ListView: View {
     let title: String
+    @Binding var items: [Item]
     var body: some View {
         VStack{
             Text(title).font(.headline)
-            List{
-                Text("Item 1")
-                Text("Item 1")
-                Text("Item 1")
+            List(items) { item in
+                NavigationLink(destination: Text("Item details view")){
+                    ItemRowView(item: item, height: 100)
+                }
             }
         }
     }
 }
 
 #Preview {
-    ListView(title: "ToDo")
+    ListView(title: "ToDo",items: .constant(
+                [Item(id: "abc123", authorId: "Yusuf", title: "Go Shopping", description: "Go shopping with mum", status: .todo, taskRelevance: .medium)]))
 }
