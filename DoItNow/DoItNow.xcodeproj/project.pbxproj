@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2703F6D82FEB016000D48EE3 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703F6D72FEB015C00D48EE3 /* ItemRowView.swift */; };
+		2703F6DA2FEC2B5F00D48EE3 /* NavPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703F6D92FEC2B5900D48EE3 /* NavPath.swift */; };
 		271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */; };
 		271DF4BA2FE8859B007F3B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271DF4B42FE8859B007F3B83 /* Assets.xcassets */; };
 		27D10B6B2FE9690700870705 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D10B6A2FE9690700870705 /* HomeView.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		2703F6D72FEB015C00D48EE3 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		2703F6D92FEC2B5900D48EE3 /* NavPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPath.swift; sourceTree = "<group>"; };
 		271DF49B2FE8835E007F3B83 /* DoItNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoItNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271DF4B42FE8859B007F3B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoItNowApp.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		271DF4BE2FE8860B007F3B83 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2703F6D92FEC2B5900D48EE3 /* NavPath.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				27D10B6B2FE9690700870705 /* HomeView.swift in Sources */,
 				271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */,
 				27D10B6D2FE9937400870705 /* ListView.swift in Sources */,
+				2703F6DA2FEC2B5F00D48EE3 /* NavPath.swift in Sources */,
 				2703F6D82FEB016000D48EE3 /* ItemRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
