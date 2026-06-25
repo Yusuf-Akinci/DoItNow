@@ -14,7 +14,7 @@ struct ListView: View {
         VStack{
             Text(title).font(.headline)
             List(items) { item in
-                NavigationLink(destination: Text("Item details view")){
+                NavigationLink(value: NavPath.details(item)){
                     ItemRowView(item: item, height: 100)
                 }
             }
@@ -24,5 +24,5 @@ struct ListView: View {
 
 #Preview {
     ListView(title: "ToDo",items: .constant(
-                [Item(id: "abc123", authorId: "Yusuf", title: "Go Shopping", description: "Go shopping with mum", status: .todo, taskRelevance: .medium)]))
+                [Item(id: "abc123", authorId: "Yusuf", title: "Go Shopping", description: "Go shopping with mum", status: .todo, taskDifficulty: .medium)]))
 }

@@ -23,7 +23,7 @@ struct ItemRowView: View{
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 
-            Image(lvlImg(item: item))
+            Image(relevanceImg.lvlImg(item: item))
                 .resizable()
                 .scaledToFit()
                 .frame(width: 60, height: 60)
@@ -31,13 +31,8 @@ struct ItemRowView: View{
         .padding(.vertical, 8)
     }
 }
-private func lvlImg(item: Item)->ImageResource{
-    if(item.taskRelevance == .low) {return ImageResource(name: "easy", bundle: .main)}
-    if(item.taskRelevance == .medium) {return ImageResource(name: "medium", bundle: .main)}
-    if(item.taskRelevance == .high) {return ImageResource(name: "hard", bundle: .main)}
-    return ImageResource(name: "easy", bundle: .main)
-}
+
 
 #Preview (traits: .sizeThatFitsLayout){
-    ItemRowView(item: Item(id: "abc23", authorId: "Yusuf", title: "fjdaslk", description: "jkfdl sdjfkl", startDate: .now, status: .todo, taskRelevance: .medium), height: 150)
+    ItemRowView(item: Item(id: "abc23", authorId: "Yusuf", title: "fjdaslk", description: "jkfdl sdjfkl", startDate: .now, status: .todo, taskDifficulty: .medium), height: 150)
 }

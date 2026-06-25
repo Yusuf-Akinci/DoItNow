@@ -8,5 +8,6 @@ import SwiftUI
 
 enum NavPath: Hashable{
     case newItem
-    case details
+    case details (Item) // we are passing an item into only the details case
+    
 }

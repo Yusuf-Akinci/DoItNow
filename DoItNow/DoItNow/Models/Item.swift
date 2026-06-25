@@ -7,14 +7,16 @@
 
 import Foundation
 
-struct Item: Identifiable{
+struct Item: Identifiable, Equatable, Hashable{
     let id: String
     let authorId: String
     var title: String
     var description: String
     var startDate: Date = .now
     var status: Status
-    var taskRelevance: TaskRelevance
+    var taskDifficulty: TaskDifficulty
+    
+    
 }
 
 enum Status: String{
@@ -33,10 +35,10 @@ enum Status: String{
     }
 }
 
-enum TaskRelevance: String{
-    case low = "Low"
+enum TaskDifficulty: String{
+    case low = "Easy"
     case medium = "Medium"
-    case high = "High"
+    case high = "Hard"
     case unknown = "Unknown"
     
     init(_ str: String) {
