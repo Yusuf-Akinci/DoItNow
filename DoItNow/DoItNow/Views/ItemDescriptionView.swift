@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ItemDescriptionView: View {
     let item: Item
-
+    let vm: ListVM
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
@@ -23,6 +23,12 @@ struct ItemDescriptionView: View {
                     DetailRow(title: "Category", value: item.status.rawValue)
                     Divider()
                     DetailRow(title: "Difficulty", value: item.taskDifficulty.rawValue)
+                    Divider()
+                    Button{
+                        vm.deleteItem(item: item)
+                    } label: {
+                        Text("Delete")
+                    }
                 }
                 .background(.regularMaterial)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -31,8 +37,8 @@ struct ItemDescriptionView: View {
         }
         .navigationTitle("Task Details")
         .navigationBarTitleDisplayMode(.inline)
+        
     }
-
     private var header: some View {
         HStack(alignment: .top, spacing: 16) {
             VStack(alignment: .leading, spacing: 8) {
@@ -81,6 +87,6 @@ private struct DetailRow: View {
 
 #Preview {
     NavigationStack {
-        ItemDescriptionView(item: Item(id: "abc123", authorId: "Yusuf", title: "Go Shopping", description: "Go shopping with mum", status: .todo, taskDifficulty: .medium))
+        ItemDescriptionView(item: Item(id: "abc123", authorId: "Yusuf", title: "Go Shopping", description: "Go shopping with mum", status: .todo, taskDifficulty: .medium), vm: ListVM())
     }
 }

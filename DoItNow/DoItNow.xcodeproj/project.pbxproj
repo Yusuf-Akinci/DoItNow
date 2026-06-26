@@ -15,7 +15,10 @@
 		2703F6E22FEC5E8C00D48EE3 /* ListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703F6E12FEC5E8900D48EE3 /* ListVM.swift */; };
 		271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */; };
 		271DF4BA2FE8859B007F3B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271DF4B42FE8859B007F3B83 /* Assets.xcassets */; };
-		27D10B6B2FE9690700870705 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D10B6A2FE9690700870705 /* HomeView.swift */; };
+		27BD45062FED76D600F82D71 /* StatusPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD45052FED76D600F82D71 /* StatusPicker.swift */; };
+		27BD45082FED7F3E00F82D71 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD45072FED7F3E00F82D71 /* CTAButton.swift */; };
+		27BD450C2FEDA27C00F82D71 /* EmptyTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD450B2FEDA27C00F82D71 /* EmptyTaskView.swift */; };
+		27BD45122FEDC55200F82D71 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD45112FEDC55200F82D71 /* HomeView.swift */; };
 		27D10B6D2FE9937400870705 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D10B6C2FE9937400870705 /* ListView.swift */; };
 		27D10B6F2FEAED3500870705 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D10B6E2FEAED3500870705 /* Item.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +33,10 @@
 		271DF49B2FE8835E007F3B83 /* DoItNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoItNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271DF4B42FE8859B007F3B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271DF4B62FE8859B007F3B83 /* DoItNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoItNowApp.swift; sourceTree = "<group>"; };
-		27D10B6A2FE9690700870705 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		27BD45052FED76D600F82D71 /* StatusPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPicker.swift; sourceTree = "<group>"; };
+		27BD45072FED7F3E00F82D71 /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
+		27BD450B2FEDA27C00F82D71 /* EmptyTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTaskView.swift; sourceTree = "<group>"; };
+		27BD45112FEDC55200F82D71 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		27D10B6C2FE9937400870705 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		27D10B6E2FEAED3500870705 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,10 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				2703F6D72FEB015C00D48EE3 /* ItemRowView.swift */,
-				27D10B6A2FE9690700870705 /* HomeView.swift */,
 				27D10B6C2FE9937400870705 /* ListView.swift */,
+				27BD450B2FEDA27C00F82D71 /* EmptyTaskView.swift */,
 				2703F6DB2FEC575400D48EE3 /* CreateItemView.swift */,
 				2703F6DD2FEC576900D48EE3 /* ItemDescriptionView.swift */,
+				27BD45052FED76D600F82D71 /* StatusPicker.swift */,
+				27BD45072FED7F3E00F82D71 /* CTAButton.swift */,
+				27BD45112FEDC55200F82D71 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BD450C2FEDA27C00F82D71 /* EmptyTaskView.swift in Sources */,
 				27D10B6F2FEAED3500870705 /* Item.swift in Sources */,
-				27D10B6B2FE9690700870705 /* HomeView.swift in Sources */,
+				27BD45122FEDC55200F82D71 /* HomeView.swift in Sources */,
+				27BD45062FED76D600F82D71 /* StatusPicker.swift in Sources */,
+				27BD45082FED7F3E00F82D71 /* CTAButton.swift in Sources */,
 				2703F6DE2FEC576900D48EE3 /* ItemDescriptionView.swift in Sources */,
 				271DF4B92FE8859B007F3B83 /* DoItNowApp.swift in Sources */,
 				2703F6E02FEC596D00D48EE3 /* relevanceImg.swift in Sources */,

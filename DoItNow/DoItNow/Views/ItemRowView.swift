@@ -1,38 +1,66 @@
-//
-//  ItemRowView.swift
-//  DoItNow
-//
-//  Created by Yusuf Akinci on 23.06.26.
-//
-
 import SwiftUI
 
-struct ItemRowView: View{
+struct ItemRowView: View {
+
     let item: Item
-    let height: CGFloat
-    var body: some View{
-        HStack(spacing: 12) {
-            VStack(alignment: .leading, spacing: 4) {
+
+    var body: some View {
+        HStack(spacing: 16) {
+
+            Circle()
+                .fill(color.opacity(0.15))
+                .frame(width: 52, height: 52)
+                .overlay {
+                    Image(systemName: symbol)
+                        .font(.title3)
+                        .foregroundStyle(color)
+                }
+
+            VStack(alignment: .leading, spacing: 6) {
+
                 Text(item.title)
                     .font(.headline)
                     .lineLimit(1)
+
                 Text(item.description)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .lineLimit(2)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
 
-            Image(relevanceImg.lvlImg(item: item))
-                .resizable()
-                .scaledToFit()
-                .frame(width: 60, height: 60)
+            Spacer()
+
+            Image(systemName: "chevron.right")
+                .foregroundStyle(.tertiary)
         }
-        .padding(.vertical, 8)
+        .padding(18)
+        .background(.background)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
     }
-}
 
+    private var symbol: String {
+        switch item.taskDifficulty {
+        case .low:
+            return "leaf.fill"
+        case .medium:
+            return "flame.fill"
+        case .high:
+            return "bolt.fill"
+        case .unknown:
+            return "questionmark"
+        }
+    }
 
-#Preview (traits: .sizeThatFitsLayout){
-    ItemRowView(item: Item(id: "abc23", authorId: "Yusuf", title: "fjdaslk", description: "jkfdl sdjfkl", startDate: .now, status: .todo, taskDifficulty: .medium), height: 150)
+    private var color: Color {
+        switch item.taskDifficulty {
+        case .low:
+            return .green
+        case .medium:
+            return .orange
+        case .high:
+            return .red
+        case .unknown:
+            return .gray
+        }
+    }
 }
